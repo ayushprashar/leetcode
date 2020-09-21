@@ -1,0 +1,10 @@
+class TrailingZeroFact {
+    public int trailingZeroes(int n) {
+        int count = 0;
+        for(int i = 5; 1 <= n/i; i *= 5) {
+            count += n/i;
+            
+        }
+        return count;
+    }
+}
